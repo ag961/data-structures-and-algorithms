@@ -210,21 +210,11 @@ const snorlaxStats = {
 
 const extractStats = (arr) => {
 
-  class PokeTotalStats {
-    constructor(name, effort, baseStat){
-      this.name = name;
-      this.total = effort + baseStat;
-    }
-  }
-  let newArray = arr.forEach(pokeStat => {
-    let pokeExtractedStats = new PokeTotalStats(pokeStat.stat.name, pokeStat.effort, pokeStat.baseStat);
-    return pokeExtractedStats;
-  });
+  let extractedStats = arr.map(pokeStat => ({name: pokeStat.stat.name, total: pokeStat.effort + pokeStat.baseStat}));
 
-  return newArray;
-
-
+  return extractedStats;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -324,7 +314,7 @@ describe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return an array containing objects with name and total values', () => {
     expect(extractStats(snorlaxStats.stats)).toStrictEqual([
       { name: 'speed', total: 35, },
