@@ -125,9 +125,11 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   let ingredientsArr = recipe.ingredients;
-  for (let i in ingredientsArr){
-    result.push(ingredientsArr.slice(2));
-  }
+  ingredientsArr.forEach(ingredient => {
+    let dropFirstWord = ingredient.slice(ingredient.indexOf(' ') + 1);
+    let dropSecondWord = dropFirstWord.slice(dropFirstWord.indexOf(' ') + 1);
+    result.push(dropSecondWord);
+  });
   return result;
 };
 
