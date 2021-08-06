@@ -95,7 +95,7 @@ append(a, b);
 console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
-const append = (arr1, arr2) => arr1.push(arr2);
+const append = (arr1, arr2) => arr1.push(...arr2);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -154,7 +154,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should append the second array to the first', () => {
     const a = [1, 2, 3, 4];
     const b = [5, 6, 7, 8];
