@@ -10,7 +10,7 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 ------------------------------------------------------------------------------------------------ */
 
-const screenForNames = (arr) => arr.filter(str => str.match(/^(Mr.|Mrs.|Ms.|Dr.)\s[A-Za-z]/g));
+const screenForNames = (arr) => arr.filter(str => str.match(/^(Mrs?|Ms|Dr)\.\s[A-Za-z]+/));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -20,7 +20,7 @@ Write a function named toTitleCase that takes in an array of strings and returns
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => arr.map(str=>str.charAt(0).toUpperCase()+str.slice(1));
+const toTitleCase = (arr) => arr.map(str => str.charAt(0).toUpperCase() + str.slice(1));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -94,7 +94,10 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+
+  return arr.filter(character => Number(character.height) > Number(arr[0].height))
+    .map(character => character.name)
+    .join(' - ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,9 +114,7 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBy = (property, arr) => {
-  // Solution code here...
-};
+const sortBy = (property, arr) => arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
@@ -127,9 +128,7 @@ http://www.insecure.com returns false because the URL is not secure
 https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
-const isSecure = (url) => {
-  // Solution code here...
-};
+const isSecure = (url) => /^https:\/\//.test(url);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
@@ -151,7 +150,17 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
+  let row1 = board[0];
+  let col1 = board.map(arr => arr[0]);
+  let row2 = board[1];
+  let col2 = board.map(arr => arr[1]);
+  let row3 = board[2];
+  let col3 = board.map(arr => arr[2]);
+  let diag1 = [board[0][0], board[1][1], board[2][2]];
+  let diag2 = [board[2][2], board[1][1], board[0][0]];
+  let all = [row1, row2, row3, col1, col2, col3, diag1, diag2];
+  let trueFalseArr = all.map(array => array.every(v => v === array[0] && v));
+  return !trueFalseArr.every(boolean => boolean === trueFalseArr[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
