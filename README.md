@@ -24,4 +24,6 @@ To run your tests
 
 ### Table of contents
 
-[401 JS Code Challenge 1 - Reverse an Array](./javascript/array-reverse/README.md)
+- [401 JS Code Challenge 1 - Reverse an Array](./javascript/array-reverse/README.md)
+- [401 JS Code Challenge 2 - Insert into an Array and Shift](./javascript/array-insert-shift/README.md)
+  
