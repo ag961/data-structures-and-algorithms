@@ -26,5 +26,5 @@ To run your tests
 
 - [401 JS Code Challenge 1 - Reverse an Array](./javascript/array-reverse/README.md)
 - [401 JS Code Challenge 2 - Insert into an Array and Shift](./javascript/array-insert-shift/README.md)
-- [401 JS Code Challenge 2 -Binary search in a sorted 1D array](./javascript/array-binary-search/README.md)
-  
+- [401 JS Code Challenge 3 - Binary search in a sorted 1D array](./javascript/array-binary-search/README.md)
+- [401 JS Code Challenge 5 - Linked List](./javascript/linked-list/README.md)  
