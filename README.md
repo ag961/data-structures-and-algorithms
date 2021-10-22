@@ -29,3 +29,4 @@ To run your tests
 - [401 JS Code Challenge 3 - Binary search in a sorted 1D array](./javascript/array-binary-search/README.md)
 - [401 JS Code Challenge 5 - Linked List](./javascript/linked-list/README.md)
 - [401 JS Code Challenge 6 - Linked List Insertions](./javascript/linked-list-insertions/README.md)
+- [401 JS Code Challenge 7 - Linked List k-th value from end](./javascript/linked-list-insertions/README.md)
