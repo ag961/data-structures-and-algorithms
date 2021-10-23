@@ -27,3 +27,7 @@ Write the following methods for the Linked List class:
   - adds a new node with the given new value immediately before the first node that has the value specified
 - to string
   - adds a new node with the given new value immediately after the first node that has the value specified
+
+## WB
+
+![WB](code-challenge-6.png)

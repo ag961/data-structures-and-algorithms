@@ -32,3 +32,7 @@ Write the following methods for the Linked List class:
 - kthFromEnd(k)
   - Return the node’s value that is k places from the tail of the linked list
   
+
+## Whiteboard
+
+![WB](code-challenge-7.png)
