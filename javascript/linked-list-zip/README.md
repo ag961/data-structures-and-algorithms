@@ -13,6 +13,10 @@ Write a function called zip lists
 
 My approach was to create a new linked list, and use `append` method of the Linked List class that I created in a previous code challenge. That way, the original linked lists are not modified. Big O for space with this approach is O(n).
 
+## Link to Code
+
+[Link](https://github.com/ag961/data-structures-and-algorithms/blob/main/javascript/linked-list-zip/zipList.js)
+
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
