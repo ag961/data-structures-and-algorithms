@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 const Node = require('./node');
 
 class Queue {

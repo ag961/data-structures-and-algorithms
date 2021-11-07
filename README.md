@@ -32,3 +32,4 @@ To run your tests
 - [401 JS Code Challenge 7 - Linked List k-th value from end](./javascript/linked-list-kth/README.md)
 - [401 JS Code Challenge 8 - Zip two linked lists](./javascript/linked-list-zip/README.md)
 - [401 JS Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
+- [401 JS Code Challenge 11 - Stack-Queue-Pseudo](./javascript/stack-queue-pseudo/README.md)
