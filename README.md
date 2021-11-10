@@ -33,3 +33,4 @@ To run your tests
 - [401 JS Code Challenge 8 - Zip two linked lists](./javascript/linked-list-zip/README.md)
 - [401 JS Code Challenge 10 - Stack and Queue](./javascript/stack-and-queue/README.md)
 - [401 JS Code Challenge 11 - Stack-Queue-Pseudo](./javascript/stack-queue-pseudo/README.md)
+- [401 JS Code Challenge 12 - First-in, First out Animal Shelter(stack-queue-animal-shelter)](./javascript/stack-queue-animal-shelter/README.md)
