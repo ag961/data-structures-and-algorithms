@@ -35,6 +35,6 @@ If a cat or dog isn’t preferred, return whichever animal has been waiting in t
 - isEmpty()
   - Returns:  Boolean indicating whether or not the queue is empty.
   
-<!-- ## WB
+## WB
 
-![WB](code-challenge-12.png) -->
+![WB](code-challenge-12.png)
