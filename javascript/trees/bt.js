@@ -11,7 +11,7 @@ class BT {
 
     let _preOrder = (root) => {
 
-      if (!root === null) {
+      if (root !== null) {
         resultArr.push(root.value);
         if (root.left !== null) {
           _preOrder(root.left);
@@ -20,6 +20,7 @@ class BT {
           _preOrder(root.right);
         }
       }
+
     };
     _preOrder(this.root);
     return resultArr;
@@ -31,7 +32,7 @@ class BT {
 
     let _inOrder = (root) => {
 
-      if (!root === null) {
+      if (root !== null) {
 
         if (root.left !== null) {
           _inOrder(root.left);
@@ -45,17 +46,17 @@ class BT {
       }
     };
     _inOrder(this.root);
-
     return resultArr;
   }
+
+
 
   postOrder() {
 
     let resultArr = [];
 
     let _postOrder = (root) => {
-
-      if (!root === null) {
+      if (root !== null) {
 
         if (root.left !== null) {
           _postOrder(root.left);
@@ -69,7 +70,6 @@ class BT {
       }
     };
     _postOrder(this.root);
-
     return resultArr;
   }
 }

@@ -28,18 +28,20 @@ This class should be a sub-class (or your languages equivalent) of the Binary Tr
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O time for `preOrder`, `inOrder`, `postOrder`  is O(n);
 
+Big O time for `add` and `contains` is O(log n);
 
 ## API
 <!-- Description of each method publicly available to your Trees -->
 - Binary Tree
-  - preOrder
-  - inOrder
-  - postOrder
-- Binar Search Tree
-  - add
-  - contains
+  - preOrder => root -> left -> right
+  - inOrder => left -> root -> right
+  - postOrder => left -> right -> root
+- Binary Search Tree
+  - add - If added value is smaller than root, adds to left child node, otherwise adds to right child node.
+  - contains - If binary search tree contains an integer, returns `true`. Otherwies, returns `false`. 
 
 ## Whiteboard
 
-<!-- ![WB](code-challenge-11-WB.png) -->
+![WB](WB15.png)
