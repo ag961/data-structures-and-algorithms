@@ -36,3 +36,4 @@ To run your tests
 - [401 JS Code Challenge 12 - First-in, First out Animal Shelter(stack-queue-animal-shelter)](./javascript/stack-queue-animal-shelter/README.md)
 - [401 JS Code Challenge 13 - Multi-bracket Validation](./javascript/stack-queue-brackets/README.md)
 - [401 JS Code Challenge 15 - Binary Tree and BST Implementation](./javascript/trees/README.md)
+- [401 JS Code Challenge 16 - Find the Maximum Value in a Binary Tree](./javascript/binary-tree-max/README.md)

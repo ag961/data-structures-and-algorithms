@@ -49,4 +49,4 @@ describe('Binary Search Tree', () => {
     tree.add(15);
     expect(tree.postOrder()).toEqual([5, 15, 10]);
   });
-})
+});
