@@ -13,13 +13,14 @@ Find the maximum value stored in the tree. You can assume that the values stored
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-findMax() traverses the whole tree
+The approach for this method is to traverse the whole tree to find the biggest value possible. So Big O time is O(n) since we have to look at evero node.
+
 
 ## API
 <!-- Description of each method publicly available to your Trees -->
-
+preOrder, inOrder, postOrder - traverses the binary tree in a specific order and returns and array of all values. 
 findMax() - finds maximum numeric value in a regular binary tree.
 
-## Whiteboard
+<!-- ## Whiteboard -->
 
-<!-- ![WB](WB15.png) -->
+![WB](tree-max.png)
