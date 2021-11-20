@@ -107,13 +107,11 @@ class BinaryTree {
   }
 
   findMax() {
-
-    let max = null;
     if (this.root === null) {
       throw 'Error: Binary Tree is empty';
     }
-
     else {
+      let max = null;
       let _preOrderMax = (root, maxValue) => {
         if (root !== null) {
 
@@ -136,28 +134,7 @@ class BinaryTree {
       return _preOrderMax(this.root, max);
     }
   }
-
-
-
 }
-
-
-let myBST = new BinaryTree();
-
-// myBST.addBinarySearch(50);
-
-// myBST.addBinarySearch(20);
-
-// myBST.addBinarySearch(60);
-
-// myBST.addBinarySearch(10);
-
-// myBST.addBinarySearch(1000);
-
-// myBST.addBinarySearch(65);
-
-console.log('RESULT', JSON.stringify(myBST, null, 2));
-console.log(myBST.findMax());
 
 module.exports = BinaryTree;
 
