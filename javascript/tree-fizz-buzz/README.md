@@ -14,26 +14,15 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 - If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 - If the value is not divisible by 3 or 5, simply turn the number into a String.
 
-### Input
-
-<!-- ![bt](input.png) -->
-
-### Output
-
-<!-- >[2,7,5,2,6,9,5,11,4] -->
-
-## Whiteboard
-
-<!-- ![WB](WB17.png) -->
-
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-<!-- Using a WHILE loop we are traversing the entire tree and at the same time using a queue.
+Using a WHILE loop we are traversing the entire tree and at the same time using a queue.
 
-Big O time - O(n); -->
+Big O time - O(n);
 
+## Test
 
-## Resources
+fizzBuzzTree.js incudes a test, that uses a manually constructed terniary tree and a visual console log.
 
-[CodeFellows learing: trees](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html)
+The function does not modify the instance of a class Tree. However, it returns a copy with nested objects, rather than nested deep copies of Node instances, which is a limitation of a current solution.
