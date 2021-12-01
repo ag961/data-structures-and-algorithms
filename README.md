@@ -38,3 +38,4 @@ To run your tests
 - [401 JS Code Challenge 15 - Binary Tree and BST Implementation](./javascript/trees/README.md)
 - [401 JS Code Challenge 16 - Find the Maximum Value in a Binary Tree](./javascript/binary-tree-max/README.md)
 - [401 JS Code Challenge 17 - Breadth-first Traversal](./javascript/tree-breadth-first/README.md)
+- [401 JS Code Challenge 18 - “FizzBuzz” on a k-ary tree](./javascript/tree-fizz-buzz/README.md)
