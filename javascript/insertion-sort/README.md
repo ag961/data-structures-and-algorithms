@@ -2,7 +2,7 @@
 
 ## Description
 
-In this code challnge, I transform a given pseudocode of insertion sort algorithm into JavaScript working code, and write a blog article with step-by-step explanation of how it works.
+In this code challenge, I transform a given pseudocode of insertion sort algorithm into JavaScript working code, and write a blog article with step-by-step explanation of how it works.
 
 ## Author
 
