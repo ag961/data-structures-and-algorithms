@@ -38,6 +38,8 @@ To run your tests
 - [401 JS Code Challenge 15 - Binary Tree and BST Implementation](./javascript/trees/README.md)
 - [401 JS Code Challenge 16 - Find the Maximum Value in a Binary Tree](./javascript/binary-tree-max/README.md)
 - [401 JS Code Challenge 17 - Breadth-first Traversal](./javascript/tree-breadth-first/README.md)
-- [401 JS Code Challenge 18 - “FizzBuzz” on a k-ary tree](./javascript/tree-fizz-buzz/README.md)
-- [401 JS Code Challenge 26 - Insertion sort](./javascript/insertion-sort/README.md)
-- [401 JS Code Challenge 27 - Merge sort](./javascript/merge-sort/README.md)
+- [401 JS Code Challenge 18 - “FizzBuzz” on a K-ary Tree](./javascript/tree-fizz-buzz/README.md)
+- [401 JS Code Challenge 26 - Insertion Sort](./javascript/insertion-sort/README.md)
+- [401 JS Code Challenge 27 - Merge Sort](./javascript/merge-sort/README.md)
+- [401 JS Code Challenge 28 - Quick Sort](./javascript/quick-sort/README.md)
+

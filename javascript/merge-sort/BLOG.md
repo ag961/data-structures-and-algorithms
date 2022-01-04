@@ -1,6 +1,4 @@
-# Merge Sort
-
-# Insertion Sort algorithm step-by-step
+# Merge Sort algorithm explanation
 
 **Author:** Ayrat Gimranov
 
