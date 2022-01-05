@@ -47,11 +47,52 @@ ALGORITHM Swap(arr, i, low)
 *(Source: CodeFellows 401 JavaScript curriculum, Code Challenge 28 - Quick Sort algorithm)*
 
 ---
-And here is the same pseudocode implemented in JavaScript:
+And here is my implementation of it in JavaScript:
 
 ```javascript
+function quickSort(arr) {
 
+  if (arr.length < 2) return arr
+  let left = 0
+  let right = arr.length - 1
+
+  _quickSort(arr, left, right);
+
+  function _quickSort(arr, left, right) {
+
+    if (left < right) {
+      let position = partition(arr, left, right)
+      _quickSort(arr, left, position - 1)
+      _quickSort(arr, position + 1, right)
+    }
+  }
+
+  function partition(arr, left, right) {
+    let pivot = arr[right]
+    let low = left - 1
+
+    for (let i = left; i < right; i++) {
+      if (arr[i] <= pivot) {
+        low++
+        swap(arr, i, low)
+      }
+    }
+
+    swap(arr, right, low + 1)  
+    return low + 1
+  }
+
+  function swap(arr, i, low) {
+    let temp
+    temp = arr[i]
+    arr[i] = arr[low]
+    arr[low] = temp
+  }
+
+  return arr
+}
 ```
+
 ---
 
 ## Step-by-step Visual
@@ -60,13 +101,13 @@ Sample input array: ```[8, 4, 23, 42, 16, 15]```
 
 Expected output sorted array: ```[4, 8, 15, 16, 23, 42]``` 
 
-
+![1](img/1.png)
 
 
 ## Big O
 
-- Time complexity - 
+- Time complexity - O(n^2)
 
 
-- Space complexity - 
+- Space complexity - O(1)
 
