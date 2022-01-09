@@ -42,4 +42,5 @@ To run your tests
 - [401 JS Code Challenge 26 - Insertion Sort](./javascript/insertion-sort/README.md)
 - [401 JS Code Challenge 27 - Merge Sort](./javascript/merge-sort/README.md)
 - [401 JS Code Challenge 28 - Quick Sort](./javascript/quick-sort/README.md)
+- [401 JS Code Challenge 30 - Hashtable](./javascript/hashtable/README.md)
 
