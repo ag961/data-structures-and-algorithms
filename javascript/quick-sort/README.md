@@ -15,59 +15,51 @@ Click [here](BLOG.md) to read my blog article with step-by-step visual and expla
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-At its worst, merge sort runs runs at O(n log(n)) time complexity.
+At its worst, quick sort runs runs at O(n^2) time complexity.
 
-Big O for space complexity is O(n)
+Big O for space complexity is O(1)
 
 ## Solution
 
 ```javascript
-function mergeSort(arr) {
-  let n = arr.length;
+function quickSort(arr) {
+  if (arr.length < 2) return arr
+  let left = 0
+  let right = arr.length - 1
 
-  if (n > 1) {
-    let mid = Math.floor(n / 2);
-    let left = arr.slice(0, mid);
-    let right = arr.slice(mid);
+  _quickSort(arr, left, right);
 
-    mergeSort(left);
-    mergeSort(right);
-    merge(left, right, arr);
-  }
-}
-
-function merge(left, right, arr) {
-  let i = 0;
-  let j = 0;
-  let k = 0;
-
-  while (i < left.length && j < right.length) {
-    if (left[i] <= right[j]) {
-      arr[k] = left[i];
-      i = i + 1;
-    }
-    else {
-      arr[k] = right[j];
-      j = j + 1;
-    }
-
-    k = k + 1;
-  }
-
-  if (i === left.length) {
-    while (j < right.length) {
-      arr[k] = right[j];
-      k = k + 1;
-      j = j + 1;
+  function _quickSort(arr, left, right) {
+    if (left < right) {
+      let position = partition(arr, left, right)
+      _quickSort(arr, left, position - 1)
+      _quickSort(arr, position + 1, right)
     }
   }
-  else {
-    while (i < left.length) {
-      arr[k] = left[i];
-      k = k + 1;
-      i = i + 1;
+
+  function partition(arr, left, right) {
+    let pivot = arr[right]
+    let low = left - 1
+
+    for (let i = left; i < right; i++) {
+      if (arr[i] <= pivot) {
+        low++
+        swap(arr, i, low)
+      }
     }
+
+    swap(arr, right, low + 1)
+    return low + 1
   }
+
+  function swap(arr, i, low) {
+    let temp
+    temp = arr[i]
+    arr[i] = arr[low]
+    arr[low] = temp
+  }
+
+  return arr;
 }
 
 ```
