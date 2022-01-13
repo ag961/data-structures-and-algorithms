@@ -1,10 +1,33 @@
-# Code Challenge 30 - Hastable
+# Code Challenge 30 - Hastables
 
-in-progress
+In this code challenge I implement a hashtable with fetures outlined below.
 
-## Features
+## Challenge
 
 Implement a Hashtable Class with the following methods:
+
+- `add`
+
+- `get`
+
+- `contains`
+
+- `hash`
+
+**Functionality:**
+
+- Adding a key/value to your hashtable results in the value being in the data structure
+- Retrieving based on a key returns the value stored
+- Successfully returns null for a key that does not exist in the hashtable
+- Successfully handles a collision within the hashtable
+- Successfully retrieves a value from a bucket within the hashtable that has a collision
+- Successfully hashes a key to an in-range value
+
+## Approach & Efficiency
+
+Time complexity - average - O(1). Worst case scenario - O(n)
+
+## API
 
 - `add`
   Arguments: key, value
@@ -20,3 +43,6 @@ Implement a Hashtable Class with the following methods:
   Arguments: key
   Returns: Index in the collection for that key
 
+## Resources
+
+Alex White (instructor) demo code
