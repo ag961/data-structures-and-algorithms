@@ -9,7 +9,8 @@ class Node {
 
 class LinkedList {
   constructor() {
-    this.head = null
+    this.head = null;
+    this.size = 0
   }
   append(value) {
     if (value || value === 0) {
@@ -17,6 +18,7 @@ class LinkedList {
 
       if (!this.head) {
         this.head = node;
+        this.size++;
         return;
       }
 
@@ -26,6 +28,7 @@ class LinkedList {
         currentNode = currentNode.next;
       }
       currentNode.next = node;
+      this.size++;
     }
   }
 
