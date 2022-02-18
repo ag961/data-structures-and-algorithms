@@ -8,9 +8,9 @@ class LinkedList {
   }
 
   insert(value) {
-    if(value){
+    if (value) {
       let node = new Node(value);
-      if (!this.head){
+      if (!this.head) {
         this.head = node;
         return this;
       }
@@ -22,7 +22,7 @@ class LinkedList {
   }
 
   includes(value) {
-    if(value){
+    if (value) {
       let currentNode = this.head;
       while (currentNode !== null) {
         if (currentNode.value === value) {
@@ -39,7 +39,7 @@ class LinkedList {
   toString() {
     let finalString = '';
     let currentNode = this.head;
-    while(currentNode !== null){
+    while (currentNode !== null) {
       finalString += `{ ${currentNode.value} } -> `;
       currentNode = currentNode.next;
     }

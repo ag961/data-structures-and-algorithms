@@ -37,6 +37,11 @@ class Graph {
     neighborsOfStarting.push(newEdge);
   }
 
+  addUndirectedEdge(startingNode, endingNode, weight) {
+    this.addDirectedEdge(startingNode, endingNode, weight);
+    this.addDirectedEdge(endingNode, startingNode, weight);
+  }
+
   getNodes() {
     return this.adjacencyList.entries();
   }
@@ -53,5 +58,5 @@ class Graph {
   }
 }
 
-module.exports = Graph;
+module.exports = { Vertex, Edge, Graph };
 
