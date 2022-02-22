@@ -1,6 +1,6 @@
 'use strict';
 
-const Graph = require('../graph');
+const { Graph } = require('../graph');
 
 let newGraph = new Graph();
 const addedVertex1 = newGraph.addNode(1000);
