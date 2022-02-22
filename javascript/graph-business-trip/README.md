@@ -22,6 +22,9 @@ Write a function called business trip
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Time - O(n*|E|), where E is neighbors of input nodes
+Space - O(1)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+Provide the graph, and two nodes that exist in the graph.
