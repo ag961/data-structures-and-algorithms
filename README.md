@@ -50,4 +50,5 @@ To run your tests
 - [401 JS Code Challenge 36 - Graph: Breadth-First Traversal](./javascript/graph-breadth-first/README.md)
 - [401 JS Code Challenge 37 - Graph: Business Trip (Shortest Distance Between Cities)](./javascript/graph-business-trip/README.md)
 - [Reverse a string three different way](./javascript/reverse-string/README.md)
+- [Final whiteboard: Binary Tree path](./javascript/whiteboarding/README.md)
 
