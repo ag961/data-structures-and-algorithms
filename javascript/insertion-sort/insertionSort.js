@@ -17,3 +17,9 @@ function insertionSort(arr) {
 }
 
 module.exports = insertionSort;
+
+[ 3,6,2,9 ]
+
+j is at 1
+temp = 2
+
