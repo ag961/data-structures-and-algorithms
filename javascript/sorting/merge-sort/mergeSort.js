@@ -30,23 +30,19 @@ function merge(left, right, arr) {
       arr[k] = right[j];
       j = j + 1;
     }
-
     k = k + 1;
   }
 
-  if (i === left.length) {
-    while (j < right.length) {
-      arr[k] = right[j];
-      k = k + 1;
-      j = j + 1;
-    }
+  while (j < right.length) {
+    arr[k] = right[j];
+    k = k + 1;
+    j = j + 1;
   }
-  else {
-    while (i < left.length) {
-      arr[k] = left[i];
-      k = k + 1;
-      i = i + 1;
-    }
+
+  while (i < left.length) {
+    arr[k] = left[i];
+    k = k + 1;
+    i = i + 1;
   }
 }
 
