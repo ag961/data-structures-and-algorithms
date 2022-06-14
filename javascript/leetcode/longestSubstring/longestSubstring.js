@@ -1,27 +1,28 @@
 'use strict';
 
 let lengthOfLongestSubstring = function (s) {
-  let counter = 0;
 
-  //  make a queue
-  let queue = [];
+  let myMap = new Map();
+
+  let longest = 0;
+  let left = 0;
 
   for (let i = 0; i < s.length; i++) {
 
-    while (queue.includes(s[i])) {
-      queue.shift();
+    if (myMap.has(s[i])) {
+      let index = myMap.get(s[i]);
+      if (index >= left) {
+        left = index + 1;
+      }
     }
 
-    queue.push(s[i]);
-    if (queue.length > counter) {
-      counter = queue.length;
+    myMap.set(s[i], i);
+    let currWindow = i - left + 1;
+    if (currWindow > longest) {
+      longest = currWindow;
     }
   }
-
-  return counter;
-
+  return longest;
 };
 
-
-console.log(lengthOfLongestSubstring('abcadbcbb'))
-
+module.exports = lengthOfLongestSubstring;

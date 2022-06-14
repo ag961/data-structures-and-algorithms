@@ -22,7 +22,6 @@ class Queue {
       this.rear.next = node;
       this.rear = node;
     }
-
   }
 
   dequeue() {
